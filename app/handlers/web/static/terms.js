@@ -4,12 +4,12 @@ if (tg) {
     tg.expand();
 }
 
-const checkbox = document.getElementById('acceptCheckbox');
-const submitBtn = document.getElementById('submitBtn');
+const checkbox = document.getElementById('acceptTerms');
+const submit = document.getElementById('submit');
 
 // Разблокировка кнопки при клике на чекбокс
 checkbox.addEventListener('change', () => {
-    submitBtn.disabled = !checkbox.checked;
+    submit.disabled = !checkbox.checked;
 });
 
 // Отправка формы

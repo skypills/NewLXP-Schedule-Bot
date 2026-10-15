@@ -2,6 +2,9 @@ from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
+from fastapi import APIRouter, HTTPException, Header
+from pydantic import BaseModel
+from typing import List, Optional
 from pydantic import BaseModel
 import pathlib
 
@@ -58,3 +61,28 @@ class FeedbackModel(BaseModel):
 async def handle_feedback(data: FeedbackModel):
     # Save feedback to DB or forward to Telegram admin
     return {"success": True}
+
+#request profile data
+class ProfileResponse(BaseModel):
+    succsess: bool
+    name: str
+    group: str
+    xp: int
+    lvl: int
+    schedule: List[LessonModel]
+
+class LessonModel(BaseModel):
+    title: str
+    teacher: str
+    room: str
+    time: str
+
+class ProfileRequest(BaseModel):
+    initData: optional[str] = None
+
+@app.post("api/get-profile", response_model=ProfileResponse)
+async def handle_get_profile(data: ProfileRequest):
+    #in future connect app/database  app/api/profile.py
+    return {
+        #data from DB
+    }
