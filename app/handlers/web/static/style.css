@@ -105,16 +105,16 @@ body {
 }
 
 .btn-primary {
-    width: 100%;
-    height: 52px;
+    width: 93vw;
+    max-width:95vh;
+    height: 7vh;
     background-color: #a100ff;
     border: none;
     border-radius: 12px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 8px;
     transition: opacity 0.2s;
 }
 
@@ -236,10 +236,13 @@ body {
 }
 
 .screen-container {
-    padding: 10px 16px 90px 16px;
-    min-width: 480px;
-    max-width: 500px;
+    width: 48vh;
+    padding: 3vh 0 85px;
     margin: 0 auto;
+}
+
+.schedule-container{
+    
 }
 
 .profile-header {
@@ -256,25 +259,25 @@ body {
 }
 
 .avatar img {
-    width: 65px;
-    height: 65px;
+    width: 9vh;
+    height: 9vh;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .user-details h1 {
-    font-size: 20px;
+    font-size: 4.2vh;
     font-weight: 700;
 }
 
 .group-name {
-    font-size: 13px;
+    font-size: 2vh;
     color: #8e8a99;
 }
 
 .primary-circle {
-    width: 44px;
-    height: 44px;
+    width: 5vh;
+    height: 5vh;
     border-radius: 50%;
     background-color: #2b1f3d;
     border: 1px solid #5a2196;
@@ -298,7 +301,7 @@ body {
 }
 
 .stat-value {
-    font-size: 20px;
+    font-size: 2.6vh;
     font-weight: 700;
     color: #a100ff;
     margin-bottom: 4px;
@@ -309,7 +312,7 @@ body {
 }
 
 .stat-label {
-    font-size: 10px;
+    font-size: 1.5vh;
     color: #8e8a99;
     letter-spacing: 0.5px;
 }
@@ -335,37 +338,32 @@ body {
     background-color: #17131e;
     border: 1px solid #231d2e;
     border-radius: 16px;
-    padding: 16px;
+    padding: 1.8vh;
     margin-bottom: 12px;
 }
+
+.schedule-header{
+    text-align: center;
+}
+
 
 .card-title-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 1.5vh;
 }
 
 .card-title-row h3 {
-    font-size: 16px;
-}
-
-.info-btn {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1px solid #433d50;
-    background: none;
-    color: #8e8a99;
-    cursor: pointer;
+    font-size: 2.5vh;
 }
 
 .card-meta {
-    font-size: 13px;
+    font-size: 1.97vh;
     color: #a19dae;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 0.8vh;
 }
 
 .meta-row {
@@ -382,9 +380,10 @@ body {
 /* Feedback Page Styles */
 .page-title-block {
     display: flex;
-    gap: 12px;
+    gap: 5vw;
     align-items: flex-start;
-    margin-bottom: 24px;
+    margin-bottom: 4vh;
+    margin-top: 4vh
 }
 
 .title-icon {
@@ -396,8 +395,8 @@ body {
 }
 
 .schedule-icon {
-    width: 20px;
-    height: 20px;
+    width: 2.4vh;
+    height: 2.4vh;
 }
 
 .subtitle {
@@ -510,7 +509,7 @@ input:checked + .slider:before { transform: translateX(22px); }
     bottom: 0;
     left: 0;
     right: 0;
-    height: 65px;
+    height: 8vh;
     background-color: #120e17;
     border-top: 1px solid #1f1929;
     display: flex;
@@ -526,7 +525,7 @@ input:checked + .slider:before { transform: translateX(22px); }
     gap: 4px;
     color: #6e697a;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 1.4vh;
     font-weight: 600;
 }
 
@@ -540,5 +539,5 @@ input:checked + .slider:before { transform: translateX(22px); }
 }
 
 .space-top {
-    margin-top: 24px;
+    margin-top: 3vh;
 }
